@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            
+        h::before{
+                  
+          content: "Fahul";
+          color: blue;
+          background-color: bisque;
+          font-size: 30px;
+
+
+        }
+           h{
+                
+               font-size: large;
+             
+           }
+         
+       h::after
+       {
+          content: "Bye";
+          font-size: 30px;
+          color: chocolate;
+
+
+       }
+      body {
+                  
+         counter-reset: section;
+
+      }
+      p::before {
+ 
+            counter-increment: section;
+            content: "shafin" counter(section)":";
+
+      }
+
+
+
+</style>
+
+
+</head>
+
+<body>
+      
+
+ 
+
+     <h>Hellow world  </h>
+     <br>
+     <h>how are you</h>
+     <br> 
+     <h>i am fine </h>
+     <br>
+    
+      <p>messi</p>
+      <p>kaka</p>
+      <p>al-amin</p>
+      <p>pesi</p>
+      <p>coco</p>
+      <p>pg</p>
+      <p>naruto</p>
+
+      </body>
+</html>
